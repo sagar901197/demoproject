@@ -1,0 +1,28 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    dbcp2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/UserInfo
+    username: root
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  mail:
+    host: smtp.gamil.com
+    port: 587
+    username: sevenmentor2027@gmail.com 
+    password: Sagar@12345
+    properties:
+      mail:
+       smtp:
+       starttls:
+         enable: true
+       auth: true
+       
+      
